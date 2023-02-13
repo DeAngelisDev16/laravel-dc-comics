@@ -22,15 +22,13 @@ return new class extends Migration
             $table->string('series', 50);
             $table->string('release_date', 50);
             $table->string('type', 50);
-
-
-
-
-
-
             $table->timestamps();
         });
     }
+
+
+
+
 
     /**
      * Reverse the migrations.
