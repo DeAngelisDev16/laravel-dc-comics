@@ -7,12 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container ">
         <div class="row">
             <div class="col-12">
-                <div class="card">
+                <div class="card ">
                     <img src="{{$product->image}}" alt="" class="img-fluid">
                     <h1>{{$product->title}}</h1>
+                    <p>{{$product->description}}</p>
+                    
                 </div>
             </div>
         </div>
