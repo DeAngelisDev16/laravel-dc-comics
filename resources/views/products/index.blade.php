@@ -24,6 +24,8 @@
                     <pre>{{$product->price}}</pre>
                     <pre>{{$product->series}}</pre>
                     <pre>{{$product->type}}</pre>
+                    <pre>{{$product->release_date}}</pre>
+
                     <a href="{{route('products.show', $product->id)}}">Show comic</a>
                     
 
