@@ -9,8 +9,9 @@
     @vite('resources/js/app.js')
 </head>
 <body>
-    <header class="bg-dark">
-        <h1 class="text-warning text-center p-4">Laravel-dc-comics</h1>
+    <header class="bg-dark text-center">
+        <h1 class="text-warning  p-4">Laravel-dc-comics</h1>
+        <a href="{{route('products.create')}}" class="text-white">Create a new comic book!</a>
     </header>
 
     <div class="container py-5">
