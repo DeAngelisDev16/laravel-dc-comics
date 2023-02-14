@@ -37,7 +37,17 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $newComicBook = $request->all();
+        $newProduct = new Product();
+        $newProduct->title = $newComicBook['title'];
+        $newProduct->description = $newComicBook['description'];
+        $newProduct->image = $newComicBook['image'];
+        $newProduct->price = $newComicBook['price'];
+        $newProduct->series = $newComicBook['series'];
+        $newProduct->release_date = $newComicBook['release_date'];
+        $newProduct->type = $newComicBook['type'];
+        $newProduct->save();
+        return redirect()->route('products.show', $newProduct->id);
     }
 
     /**

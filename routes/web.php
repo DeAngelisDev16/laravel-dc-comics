@@ -14,6 +14,9 @@ use App\Http\Controllers\ProductController as ProductController;
 |
 */
 
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+/* Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/products/create', [ProductController::class, 'create'])->name('products.create');
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+ */
+
+Route::resource('products', ProductController::class);
