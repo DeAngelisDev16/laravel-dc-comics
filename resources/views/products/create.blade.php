@@ -15,6 +15,7 @@
 
     <div class="container pt-3">
         <form method="POST" action="{{route('products.store')}}">
+            @csrf
             <div class="mb-3">
                 <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title">
             </div>
