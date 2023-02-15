@@ -20,6 +20,7 @@
                         @method('DELETE')
                         <button>Delete</button>
                     </form>
+                    <a href="{{route('products.index')}}">Go to comics cards</a>
                     
 
                     <h1>{{$product->title}}</h1>

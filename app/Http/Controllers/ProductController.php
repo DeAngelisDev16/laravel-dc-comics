@@ -93,7 +93,7 @@ class ProductController extends Controller
         $product->series = $newComicBook['series'];
         $product->release_date = $newComicBook['release_date'];
         $product->type = $newComicBook['type'];
-        $product->save();
+        $product->update();
 
 
 
