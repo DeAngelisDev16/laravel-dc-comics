@@ -15,6 +15,12 @@
                 <div class="card text-center">
                     <img src="{{$product->image}}" alt="" class="img-fluid">
                     <a href="{{route('products.edit', $product->id)}}" class="p-3">Edit comic book</a>
+                    <form action="{{route('products.destroy', $product->id)}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button>Delete</button>
+                    </form>
+                    
 
                     <h1>{{$product->title}}</h1>
                     <p>{{$product->description}}</p>
