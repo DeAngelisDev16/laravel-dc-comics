@@ -83,7 +83,18 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+
+        $newComicBook = $request->all();
+        $product = Product::findOrFail($id);
+        $product->title = $newComicBook['title'];
+        $product->description = $newComicBook['description'];
+        $product->image = $newComicBook['image'];
+        $product->price = $newComicBook['price'];
+        $product->series = $newComicBook['series'];
+        $product->release_date = $newComicBook['release_date'];
+        $product->type = $newComicBook['type'];
+        $product->save();
+        return redirect()->route('products.show', $product->id);
     }
 
     /**
