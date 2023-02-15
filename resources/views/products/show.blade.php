@@ -14,7 +14,7 @@
             <div class="col-12">
                 <div class="card text-center">
                     <img src="{{$product->image}}" alt="" class="img-fluid">
-                    <a href="" class="p-3">Edit comic book</a>
+                    <a href="{{route('products.edit', $product->id)}}" class="p-3">Edit comic book</a>
 
                     <h1>{{$product->title}}</h1>
                     <p>{{$product->description}}</p>

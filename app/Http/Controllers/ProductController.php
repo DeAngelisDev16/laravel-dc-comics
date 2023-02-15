@@ -94,6 +94,9 @@ class ProductController extends Controller
         $product->release_date = $newComicBook['release_date'];
         $product->type = $newComicBook['type'];
         $product->save();
+
+
+
         return redirect()->route('products.show', $product->id);
     }
 
