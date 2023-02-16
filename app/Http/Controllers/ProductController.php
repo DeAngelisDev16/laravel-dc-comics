@@ -107,7 +107,7 @@ class ProductController extends Controller
             [
                 'title' => 'required|min:5|max:100',
                 'description' => 'required|min:10',
-                'image' => 'required|min:10',
+                'image' => 'required|url|min:10',
                 'price' => 'required|numeric',
                 'series' => 'required|min:5|max:50',
                 'release_date' => 'string|nullable',
