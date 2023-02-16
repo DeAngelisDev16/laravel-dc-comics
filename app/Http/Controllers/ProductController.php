@@ -51,7 +51,15 @@ class ProductController extends Controller
 
             ],
             [
-                'title.required' => 'Devi inserire minimo 5 caratteri'
+                'title.required' => 'Nel titolo devi inserire almeno 5 caratteri',
+                'description.required' => 'Inserisci una descrizione valida, composta da almeno 10 caratteri',
+                'image.required' => 'Inserisci un URL valido',
+                'price.required' => 'É necessario inserire un numero, senza la virgola',
+                'series.required' => 'Inserisci almeno 5 caratteri, massimo 50',
+                'release_date.string' => 'Insersci una data come indicato nel campo (ANNO/MESE/GIORNO)',
+                'type.required' => 'Inserisci almeno 5 caratteri, massimo 50',
+
+
             ]
         );
 
@@ -117,7 +125,14 @@ class ProductController extends Controller
 
             ],
             [
-                'title.required' => 'Devi inserire minimo 5 caratteri'
+                'title.required' => 'Nel titolo devi inserire almeno 5 caratteri',
+                'description.required' => 'Inserisci una descrizione valida, composta da almeno 10 caratteri',
+                'image.required' => 'Inserisci un URL valido',
+                'price.required' => 'É necessario inserire un numero, senza la virgola',
+                'series.required' => 'Inserisci almeno 5 caratteri, massimo 50',
+                'release_date.string' => 'Insersci una data come indicato nel campo (ANNO/MESE/GIORNO)',
+                'type.required' => 'Inserisci almeno 5 caratteri, massimo 50',
+
             ]
         );
 
