@@ -37,10 +37,23 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required'
+        $request->validate(
+            [
+                'title' => 'required|min:5|max:100',
+                'description' => 'required|min:10',
+                'image' => 'required|min:10',
+                'price' => 'required|numeric',
+                'series' => 'required|min:5|max:50',
+                'release_date' => 'string|nullable',
+                'type' => 'required|min:5|max:50',
 
-        ]);
+
+
+            ],
+            [
+                'title.required' => 'Devi inserire minimo 5 caratteri'
+            ]
+        );
 
 
 
@@ -90,10 +103,23 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'title' => 'required'
+        $request->validate(
+            [
+                'title' => 'required|min:5|max:100',
+                'description' => 'required|min:10',
+                'image' => 'required|min:10',
+                'price' => 'required|numeric',
+                'series' => 'required|min:5|max:50',
+                'release_date' => 'string|nullable',
+                'type' => 'required|min:5|max:50',
 
-        ]);
+
+
+            ],
+            [
+                'title.required' => 'Devi inserire minimo 5 caratteri'
+            ]
+        );
 
         $newComicBook = $request->all();
         $product = Product::findOrFail($id);
