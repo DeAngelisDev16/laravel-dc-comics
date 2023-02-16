@@ -14,6 +14,20 @@
         <form method="POST" action="{{route('products.update', $product->id)}}">
             @csrf
             @method('PUT')
+
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                    <li>
+                        {{$error}}
+                    </li>
+                        
+                    @endforeach
+
+                    
+                </ul>
+
+            </div>
             <div class="mb-3">
                 <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title" value="{{$product->title}}">
             </div>

@@ -37,6 +37,13 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required'
+
+        ]);
+
+
+
         $newComicBook = $request->all();
         $newProduct = new Product();
         $newProduct->title = $newComicBook['title'];
@@ -83,6 +90,10 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'title' => 'required'
+
+        ]);
 
         $newComicBook = $request->all();
         $product = Product::findOrFail($id);
