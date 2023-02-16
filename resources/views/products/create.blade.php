@@ -34,31 +34,31 @@
             </div>
             @endif
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title">
+                <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title" value="{{old('title')}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic description" class="form-control" id="" name="description">
+                <input type="text" placeholder="Add a comic description" class="form-control" id="" name="description" value="{{old('description')}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="copy a comic image (URL)" class="form-control" id="" name="image">
+                <input type="text" placeholder="copy a comic image (URL)" class="form-control" id="" name="image" value="{{old('image')}}">
             </div>
 
             <div class="mb-3">
-                <input type="number" placeholder="Add a comic price" class="form-control" id="" name="price">
+                <input type="number" placeholder="Add a comic price" class="form-control" id="" name="price" value="{{old('price')}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic series" class="form-control" id="" name="series" >
+                <input type="text" placeholder="Add a comic series" class="form-control" id="" name="series" value="{{old('series')}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a release date (YY/MM/DD)" class="form-control" id=""  name="release_date">
+                <input type="text" placeholder="Add a release date (YY/MM/DD)" class="form-control" id=""  name="release_date" value="{{old('release_date')}}">
             </div>
 
             <div class="mb-3">
-                <input type="type" placeholder="Add a comic type" class="form-control"  id="" name="type">
+                <input type="type" placeholder="Add a comic type" class="form-control"  id="" name="type" value="{{old('type')}}">
             </div>
               
               

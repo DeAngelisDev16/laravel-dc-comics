@@ -32,31 +32,31 @@
             </div>
             @endif
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title" value="{{$product->title}}">
+                <input type="text" placeholder="Add a comic title" class="form-control" id="" name="title" value="{{old('title') ?? $product->title}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic description" class="form-control" id="" name="description" value="{{$product->description}}">
+                <input type="text" placeholder="Add a comic description" class="form-control" id="" name="description" value="{{old('description') ?? $product->description}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="copy a comic image (URL)" class="form-control" id="" name="image" value="{{$product->image}}">
+                <input type="text" placeholder="copy a comic image (URL)" class="form-control" id="" name="image" value="{{old('image') ?? $product->image}}">
             </div>
 
             <div class="mb-3">
-                <input type="number" placeholder="Add a comic price" class="form-control" id="" name="price" value="{{$product->price}}">
+                <input type="number" placeholder="Add a comic price" class="form-control" id="" name="price" value="{{old('price') ?? $product->price}}">
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a comic series" class="form-control" id="" name="series" value="{{$product->series}}" >
+                <input type="text" placeholder="Add a comic series" class="form-control" id="" name="series" value="{{old('series') ?? $product->series}}" >
             </div>
 
             <div class="mb-3">
-                <input type="text" placeholder="Add a release date (YY/MM/DD)" class="form-control" id=""  name="release_date" value="{{$product->release_date}}">
+                <input type="text" placeholder="Add a release date (YY/MM/DD)" class="form-control" id=""  name="release_date" value="{{old('release_date') ?? $product->release_date}}">
             </div>
 
             <div class="mb-3">
-                <input type="type" placeholder="Add a comic type" class="form-control"  id="" name="type" value="{{$product->type}}">
+                <input type="type" placeholder="Add a comic type" class="form-control"  id="" name="type" value="{{old('type') ?? $product->type}}">
             </div>
               
               
